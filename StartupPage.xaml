@@ -1,0 +1,21 @@
+﻿<Page x:Name="FirstPage" x:Class="AnalyzerGui.StartupPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnalyzerGui"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage" Background="White">
+
+    <Grid>
+        <Grid Margin="0,0,0,-0.4">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button x:Name="GatherProcInfo" Content="Gather process info" Grid.Row="0" FontFamily="Segoe UI Semilight" FontSize="18" HorizontalAlignment="Center" Width="184" Height="40" VerticalAlignment="Center" Click="GatherProcInfo_Click" />
+            <Button x:Name="Installer" Content="Create Installer" Grid.Row="1" IsEnabled="False" FontFamily="Segoe UI Semilight" FontSize="18" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center" Width="184" />
+        </Grid>
+    </Grid>
+</Page>

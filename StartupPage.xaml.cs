@@ -16,14 +16,18 @@ using System.Windows.Shapes;
 namespace AnalyzerGui
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartupPage : Page
     {
-        public MainWindow()
+        public StartupPage()
         {
             InitializeComponent();
-            StartupFrame.Navigate(new StartupPage());
+        }
+
+        private void GatherProcInfo_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("/AnalyzerGui;component/SelectionPage.xaml", UriKind.Relative));
         }
     }
 }
