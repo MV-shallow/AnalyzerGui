@@ -29,5 +29,15 @@ namespace AnalyzerGui
         {
             this.NavigationService.Navigate(new Uri("/AnalyzerGui;component/StartupPage.xaml", UriKind.Relative));
         }
+
+        private void ShowRunningProcesses(object sender, RoutedEventArgs e)
+        {
+          //  SelectionFrame.NavigationService.Navigate(new Uri("/AnalyzerGui;component/RunningProcesses.xaml", UriKind.Relative));
+        }
+
+        private void FrameLoaded(object sender, RoutedEventArgs e)
+        {
+         //   SelectionFrame.NavigationService.Navigate(new Uri("/AnalyzerGui;component/RunningProcesses.xaml", UriKind.Relative));
+        }
     }
 }

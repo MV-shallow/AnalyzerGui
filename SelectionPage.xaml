@@ -5,11 +5,22 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AnalyzerGui"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="835.508"
       Title="SelectionPage">
 
     <Grid Background="White">
-        <Button x:Name="GoBack" Content="Cancel" HorizontalAlignment="Left" Margin="213,103,0,0" VerticalAlignment="Top" Width="415" Height="242" Background="#FFDA4B4B" Click="GoBack_Click"/>
+        <Button x:Name="GoBack" Content="Cancel" HorizontalAlignment="Left" Margin="10,344,0,0" VerticalAlignment="Top" Width="108" Height="29" Background="#FFDA4B4B" Click="GoBack_Click"/>
+        <Button x:Name="SelectProc" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Width="400" Height="70" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Background="#FFEEEEEE">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="85*"></ColumnDefinition>
+                    <ColumnDefinition Width="312*">
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image  Grid.Column="0" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="75" Source="DrAnalyzer.png" Margin="0,0,0,-2.8"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"> Select one of the running processes for analysis</TextBlock>
+            </Grid>
+        </Button>
 
     </Grid>
 </Page>

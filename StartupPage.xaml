@@ -5,17 +5,19 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AnalyzerGui"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="MainPage" Background="White">
+      d:DesignHeight="450"
+      Title="MainPage" Background="White" Width="504">
 
     <Grid>
-        <Grid Margin="0,0,0,-0.4">
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Button x:Name="GatherProcInfo" Content="Gather process info" Grid.Row="0" FontFamily="Segoe UI Semilight" FontSize="18" HorizontalAlignment="Center" Width="184" Height="40" VerticalAlignment="Center" Click="GatherProcInfo_Click" />
-            <Button x:Name="Installer" Content="Create Installer" Grid.Row="1" IsEnabled="False" FontFamily="Segoe UI Semilight" FontSize="18" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center" Width="184" />
-        </Grid>
+        <TextBlock Margin="173,391,172.2,36.6">
+            <Hyperlink TextDecorations="" NavigateUri="/AnalyzerGui;component/SelectionPage.xaml" FontWeight="Bold" FontSize="16"> Gather process info➜ </Hyperlink>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="191,418,186.2,9.6">
+            <Hyperlink TextDecorations="" NavigateUri="/AnalyzerGui;component/SelectionPage.xaml" FontWeight="Bold" FontSize="16"> Create Installer➜ </Hyperlink>
+        </TextBlock>
+        <Image HorizontalAlignment="Center" Height="368" Margin="62,0,56.2,81.6" VerticalAlignment="Center" Width="389" Source="DrAnalyzer.png"/>
+        <!--     <Button x:Name="GatherProcInfo" Content="Gather process info" Grid.Row="0" FontFamily="Segoe UI Semilight" FontSize="20" HorizontalAlignment="Stretch" Margin="299,0,299,40" Height="62" VerticalAlignment="Bottom" Click="GatherProcInfo_Click"  />
+        <Button x:Name="Installer" Content="Create Installer" IsEnabled="False"  FontFamily="Segoe UI Semilight" FontSize="20" Height="62" VerticalAlignment="Top" Margin="299,40,299,0" HorizontalAlignment="Stretch" Grid.Row="1" />
+   -->
     </Grid>
 </Page>

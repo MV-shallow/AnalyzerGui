@@ -17,3 +17,5 @@ C:\Users\Admin\source\repos\MV-shallow\dr.analyzer\AnalyzerGui\obj\Debug\Analyze
 C:\Users\Admin\source\repos\MV-shallow\dr.analyzer\AnalyzerGui\obj\Debug\AnalyzerGui.pdb
 C:\Users\Admin\source\repos\MV-shallow\dr.analyzer\AnalyzerGui\obj\Debug\SelectionPage.g.cs
 C:\Users\Admin\source\repos\MV-shallow\dr.analyzer\AnalyzerGui\obj\Debug\SelectionPage.baml
+C:\Users\Admin\source\repos\MV-shallow\dr.analyzer\AnalyzerGui\obj\Debug\RunningProcesses.g.cs
+C:\Users\Admin\source\repos\MV-shallow\dr.analyzer\AnalyzerGui\obj\Debug\RunningProcesses.baml
